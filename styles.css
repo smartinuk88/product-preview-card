@@ -1,0 +1,24 @@
+:root {
+  --black: #1c232b;
+  --grey: #6c7289;
+  --cream: #f2eae2;
+  --white: #fff;
+  --green-500: #3d8168;
+  --green-700: #1a4032;
+  --spacing-500: 2.5rem /* 40px */;
+  --spacing-400: 2rem /* 32px */;
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-50: 0.25rem; /* 4px */
+  --font-bold: 700;
+  --font-regular: 500;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
