@@ -36,7 +36,7 @@ body {
   flex-direction: column;
   margin: 5rem auto;
   border-radius: var(--spacing-100);
-  width: clamp(21.875rem, 23.474vw + 16.373rem, 37.5rem);
+  width: clamp(21.875rem, 63.613vw + 6.966rem, 37.5rem);
   color: var(--grey);
   background: var(--white);
   overflow: hidden;
@@ -107,4 +107,26 @@ body {
   border: none;
   font-weight: var(--font-bold);
   line-height: 1.1;
+  transition: background-color 0.3s ease-out;
+}
+
+.product__add-to-cart:hover,
+.product__add-to-cart:focus {
+  cursor: pointer;
+  background-color: var(--green-700);
+}
+
+@media only screen and (min-width: 48em) {
+  .product {
+    flex-direction: row;
+  }
+
+  .product__image {
+    aspect-ratio: auto;
+    width: 18.75rem;
+  }
+
+  .product__text-container {
+    gap: var(--spacing-400);
+  }
 }

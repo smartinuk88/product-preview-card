@@ -27,6 +27,11 @@
       <article class="product">
         <img
           class="product__image"
+          srcset="
+            ./images/image-product-mobile.jpg  700w,
+            ./images/image-product-desktop.jpg 600w
+          "
+          sizes="(width <= 600px) 350px, 300px"
           src="./images/image-product-mobile.jpg"
           alt="perfume bottle"
         />
