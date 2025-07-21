@@ -29,6 +29,7 @@ body {
   font-weight: var(--font-regular);
   line-height: 1.6;
   background: var(--cream);
+  min-height: 100vh;
 }
 
 .product {
@@ -117,6 +118,12 @@ body {
 }
 
 @media only screen and (min-width: 48em) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .product {
     flex-direction: row;
   }

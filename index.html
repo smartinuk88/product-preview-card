@@ -25,16 +25,17 @@
   <body>
     <main>
       <article class="product">
-        <img
-          class="product__image"
-          srcset="
-            ./images/image-product-mobile.jpg  700w,
-            ./images/image-product-desktop.jpg 600w
-          "
-          sizes="(width <= 600px) 350px, 300px"
-          src="./images/image-product-mobile.jpg"
-          alt="perfume bottle"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            class="product__image"
+            src="./images/image-product-mobile.jpg"
+            alt="Perfume bottle"
+          />
+        </picture>
 
         <div class="product__text-container">
           <div class="product__text-container-main">
