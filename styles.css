@@ -22,3 +22,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: var(--font-regular);
+  line-height: 1.6;
+  background: var(--cream);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  margin: 5rem auto;
+  border-radius: var(--spacing-100);
+  width: clamp(21.875rem, 23.474vw + 16.373rem, 37.5rem);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.product__image {
+  aspect-ratio: 1 / 1;
+  height: auto;
+  width: 100%;
+}
+
+.product__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  padding: var(--spacing-400);
+}
+
+.product__text-container-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
